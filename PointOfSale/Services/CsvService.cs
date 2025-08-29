@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -22,7 +23,7 @@ namespace PointOfSale.Services
                 produtos.Add(new Produto(
                     int.Parse(partes[0]),
                     partes[1],
-                    decimal.Parse(partes[2]),
+                    decimal.Parse(partes[2], CultureInfo.InvariantCulture),
                     int.Parse(partes[3])
                 ));
             }

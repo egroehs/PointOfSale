@@ -17,7 +17,7 @@ namespace PointOfSale
             while (true)
             {
                 Console.Clear();
-                Console.WriteLine("=== MENU PEDIDO ===");
+                Console.WriteLine("* MENU PEDIDO *");
                 Console.WriteLine("1 - Adicionar item");
                 Console.WriteLine("2 - Exibir pedido");
                 Console.WriteLine("3 - Realizar pagamento do pedido");

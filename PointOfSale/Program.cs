@@ -13,7 +13,7 @@ namespace PointOfSale
         static void Main(string[] args)
         {
             string caminhoCsv = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data", "baseProdutos.csv");
-            var estoque = new Estoque(CsvService.CarregarProdutos("Data/baseProdutos.csv"));
+            var estoque = new Estoque(CsvService.CarregarProdutos(caminhoCsv));
 
             Caixa.MenuPrincipal(estoque);
         }

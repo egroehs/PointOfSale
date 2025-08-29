@@ -71,12 +71,12 @@ namespace PointOfSale
                 return;
             }
 
-            Console.WriteLine("\n--- Itens do Pedido ---");
-            Console.WriteLine("ID\tProduto\t\tQtd\tPreço\tSubtotal");
+            Console.WriteLine("\nItens do Pedido");
+            Console.WriteLine("ID\t\tProduto\t\tQtd\t\tPreço\t\tSubtotal");
 
             foreach (var item in Itens)
             {
-                Console.WriteLine($"{item.Produto.Id}\t{item.Produto.Nome}\t{item.Quantidade}\t{item.Produto.Preco:C}\t{item.Subtotal:C}");
+                Console.WriteLine($"{item.Produto.Id}\t\t{item.Produto.Nome}\t\t{item.Quantidade}\t\t{item.Produto.Preco:C}\t\t{item.Subtotal:C}");
             }
 
             Console.WriteLine("------------------------------");
